@@ -36,4 +36,3 @@ env:
 # Wait for error
 - assertVisible:
     id: "access-check-error"
-    timeout: 10000

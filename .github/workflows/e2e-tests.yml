@@ -138,15 +138,6 @@ jobs:
           expo-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
 
-      - name: Setup Android Emulator
-        uses: reactivecircus/android-emulator-runner@v2
-        with:
-          api-level: 33
-          target: google_apis
-          arch: x86_64
-          profile: pixel_6
-          script: echo "Emulator started"
-
       - name: Build Android app
         run: |
           npx expo prebuild --platform android --clean

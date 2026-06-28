@@ -36,4 +36,3 @@ env:
 # Wait for result
 - assertVisible:
     id: "access-check-result"
-    timeout: 10000
